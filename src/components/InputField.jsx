@@ -9,6 +9,7 @@ export default class InputField extends Component {
         className="form-control"
         placeholder={this.props.placeholder}
         required
+        onChange={this.props.handleChange}
       />
     )
   }
@@ -16,4 +17,5 @@ export default class InputField extends Component {
 InputField.propTypes = {
   type: PropTypes.string,
   placeholder: PropTypes.string,
+  handleChange: PropTypes.any,
 }
